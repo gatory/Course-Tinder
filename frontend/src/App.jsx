@@ -1,16 +1,40 @@
-import React, { useEffect, useState } from 'react';
-import './App.css'
+import React, { useEffect, useState ,useRef} from 'react';
+import './App.css';
 
 
-function App() {
-  const [message, setMessage] = useState('');
-  useEffect(() => {
-    fetch('/api')
-      .then(response => response.json())
-      .then(data => setMessage(data.message));
-  }, []);
+const Submit = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert('Name submitted: ' + inputRef.current.value);
+    const time = inputRef.toString();
+    fetch("http://localhost:5000/api", {
+      method: "POST",
+      mode: "cors",
+      headers:{
+        "Content-Type" : "application/json"
+      },
+      body: JSON.stringify(time)
+    }).then(()  =>{
+      console.log('request made.');
+    })
+  };
+  const inputRef = useRef();
+  return (
+    <form onSubmit={handleSubmit}>
+      <div>
+         <label htmlFor="get-time" style={{marginRight: '10px'}}>Time:</label>
+         <input id="get-time" type="text" ref={inputRef} />
+        </div>
+      <button type="submit">Submit</button>
+    </form>
+  );
+};
 
-  return <div>{message}</div>;
+export default function App() {
+  const [message, setMessage, setInputValue, inputValue] = useState("");
+  return (
+    <div>
+      <Submit />
+    </div>
+  );
 }
-
-export default App
