@@ -1,6 +1,6 @@
 import React, { useEffect, useState ,useRef} from 'react';
 import './App.css';
-import { TimePickerComponent } from "@syncfusion/ej2-react-calendars"
+import { TimePickerComponent } from "@syncfusion/ej2-react-calendars" 
 
 
 const Submit = () => {
