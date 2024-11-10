@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@syncfusion/ej2-react-calendars": "^27.1.57"
+  }
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState ,useRef} from 'react';
 import './App.css';
+import { TimePickerComponent } from "@syncfusion/ej2-react-calendars"
 
 
 const Submit = () => {
@@ -34,6 +35,7 @@ export default function App() {
   const [message, setMessage, setInputValue, inputValue] = useState("");
   return (
     <div>
+      <TimePickerComponent placeholder="Select a Time"> </TimePickerComponent>
       <Submit />
     </div>
   );
