@@ -35,7 +35,9 @@ export default function App() {
   const [message, setMessage, setInputValue, inputValue] = useState("");
   return (
     <div>
-      <TimePickerComponent placeholder="Select a Time"> </TimePickerComponent>
+       <div className="positioned-time">
+      <TimePickerComponent placeholder="Select a Time" />
+      </div>
       <Submit />
     </div>
   );
