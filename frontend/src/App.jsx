@@ -45,8 +45,8 @@ const Submit  = () => {
 export default function App() {
   const [message, setMessage, setInputValue, inputValue] = useState("");
   return (
-    <div>
-       <div className="positioned-time">
+    <div className="person-gif">
+      <div className="positioned-time">
       <TimePickerComponent placeholder="Select a Time" />
       </div>
       <Submit />
