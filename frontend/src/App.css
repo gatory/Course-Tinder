@@ -59,13 +59,41 @@ body {
 }
 
 .person-gif {
-  background-image: url(./images/person.gif);  
-  background-size: contain;                    
-  background-position: center;                
-  background-repeat: no-repeat;               
-  width: 500px;                                
-  height: 300px;                               
-  position: relative;                          
-  margin: 20px auto;                           
+  background-image: url(./images/person.gif);  /* Set the background image */
+  background-size: contain;                     /* Scale the image to fit the container */
+  background-position: center;                  /* Center the background image */
+  background-repeat: no-repeat;                 /* Do not repeat the background image */
+  width: 500px;                                 /* Set the desired width */
+  height: 300px;                                /* Set the desired height */
+  position: absolute;                           /* Position the element absolutely */
+  margin: 20px;                                 /* Add margin around the element */
+  top: 52%;                                    /* Position 20px from the top */
+  left: 10%;                                   /* Position 50px from the left */
 }
 
+.person-gif {
+  background-image: url(./images/person.gif);  /* Set the background image */
+  background-size: contain;                     /* Scale the image to fit the container */
+  background-position: center;                  /* Center the background image */
+  background-repeat: no-repeat;                 /* Do not repeat the background image */
+  width: 500px;                                 /* Set the desired width */
+  height: 300px;                                /* Set the desired height */
+  position: absolute;                           /* Position the element absolutely */
+  margin: 20px;                                 /* Add margin around the element */
+  top: 52%;                                    /* Position 20px from the top */
+  left: 10%;                                   /* Position 50px from the left */
+}
+
+.rock-png {
+  background-image: url(./images/rock.png);  /* Set the background image */
+  background-size: contain;                     /* Scale the image to fit the container */
+  background-position: center;                  /* Center the background image */
+  background-repeat: no-repeat;                 /* Do not repeat the background image */
+  width: 500px;                                 /* Set the desired width */
+  height: 300px;                                 /* Set the desired height */
+  position: absolute;                           /* Position the element absolutely */
+  margin: 20px;                                 /* Add margin around the element */
+  top: -10%;                                    /* Position 20px from the top */
+  left: 10%;     
+  transform: rotate(90deg);                               /* Position 50px from the left */
+}
